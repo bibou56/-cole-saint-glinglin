@@ -49,11 +49,12 @@
                     <textarea name="message" id="message" placeholder="Votre message" cols="30" rows="10"></textarea>
                 </p>
                 <p class="consentement">
-                <input type="checkbox" name="consentement" id="consentement">
+                <input type="checkbox" name="consentement" id="consentement" required>
                 <label for="consentement"><a href="#" title="cliquez pour lire les conditions d'utilisation">J'accepte les conditions d'utilisation</a></label></p>
                 </p>
                 <p>
-                    <input type="submit" value="Envoyer"><input type="reset" value="Annuler">
+                    <input type="submit" value="Envoyer" id="btnEnvoi">
+                    <input type="reset" value="Annuler">
                 </p>           
             </form>
         </div>

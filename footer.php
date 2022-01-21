@@ -27,6 +27,7 @@
             <div id="copyright" class="container"><a href="#"> - Mentions légales -</a></div>
             
         </footer>
+        <script type="text/javascript" src="./script.js"></script>
 
     </body>
 </html>

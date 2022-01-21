@@ -32,11 +32,11 @@
                 <div id="menu">
                     <label for="mobile"><i class="fas fa-bars"></i></label>
                     <input type="checkbox" id="mobile" role="button">
-                    <div class="sous-menu">
+                    <div id="sous-menu" class="sous-menu">
                         <ul>
-                            <li><a href="index.php" class="rouge">Accueil</a></li>
+                            <li><a href="index.php" id="accueil" class="rouge">Accueil</a></li>
                             <li><a href="#" class="orange">Vie de l'école</a></li>
-                            <li><a href="actualites.php" class="jaune">Actualités</a></li>
+                            <li><a href="actualites.php" id="test" class="jaune">Actualités</a></li>
                             <li><a href="#" class="vert">Vie des classes</a></li>
                             <li><a href="#" class="bleu">Infos pratiques</a></li>
                             <li><a href="contact.php" class="indigo">Contact</a></li>
@@ -51,6 +51,6 @@
             <div class="transition"></div>
         </div>
 
-
+        
 
     </header>

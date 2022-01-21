@@ -116,6 +116,9 @@ body{
     line-height: 1.5rem;
     font-size: 1rem;
 }
+.active{
+    text-decoration: underline;
+}
 .sous-menu ul li a.rouge{
     color: var(--rouge);
 }
@@ -842,6 +845,10 @@ body{
     }
     .sous-menu ul li a{
         font-size: 1.1rem;
+    }
+    .sous-menu ul li a:hover{
+        font-size: 1.3rem;
+        font-weight: bolder;
     }
 
     /* index */
