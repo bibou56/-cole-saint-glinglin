@@ -26,42 +26,46 @@
         <h2>- Contactez-nous -</h2>
         <div id="formulaire-contact">
             <img src="images/ecrire2.jpg" width="250" alt="machine à écrire">
-            <p class="champs"><span class="obligatoire">*</span>champs obligatoires</p>
-            <form action="#" method="post">
-                <p>
-                    <label for="nom">Votre nom<span class="obligatoire">*</span></label>
-                    <input type="text" name="nom" id="nom" placeholder="NOM">
-                </p>
-                <p>
-                    <label for="prenom">Votre prénom<span class="obligatoire">*</span></label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Prénom">
-                </p>
-                <p>
-                    <label for="adresse">Votre adresse<span class="obligatoire">*</span></label>
-                    <input type="text" name="adresse" id="address" placeholder="Votre adresse">
-                    <ul id="wrapper"></ul>
-                </p>
+            <div id="gauche">
+                <p class="champs"><span class="obligatoire">*</span>champs obligatoires</p>
+                <form action="#" method="post">
+                    <p>
+                        <label for="nom">Votre nom<span class="obligatoire">*</span></label>
+                        <input type="text" name="nom" id="nom" placeholder="NOM" required>
+                    </p>
+                    <p>
+                        <label for="prenom">Votre prénom<span class="obligatoire">*</span></label>
+                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+                    </p>
+                    <p>
+                        <label for="adresse">Votre adresse<span class="obligatoire">*</span></label>
+                        <input type="text" name="adresse" id="address" placeholder="Votre adresse" required>
+                        <ul id="wrapper"></ul>
+                    </p>
 
-                <p>
-                    <label for="email">Votre e-mail<span class="obligatoire">*</span></label>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                </p>
-                <p>
-                    <label for="tel">Votre téléphone</label>
-                    <input type="tel" name="tel" id="tel" placeholder="06 40 40 40 40">
-                </p>
-                <p class="message">
-                    <label for="message">Laissez-nous un message, nous vous contacterons au plus vite.</label>
-                    <textarea name="message" id="message" placeholder="Votre message" cols="30" rows="10"></textarea>
-                </p>
-                <p class="consentement">
-                <input type="checkbox" name="consentement" id="consentement" required>
-                <label for="consentement"><a href="#" title="cliquez pour lire les conditions d'utilisation">J'accepte les conditions d'utilisation</a></label></p>
-                </p>
-                <p>
-                    <input type="submit" value="Envoyer" id="btnEnvoi">
-                    <input type="reset" value="Annuler">
-                </p>           
+                    <p>
+                        <label for="email">Votre e-mail<span class="obligatoire">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    </p>
+                    <p>
+                        <label for="tel">Votre téléphone</label>
+                        <input type="tel" name="tel" id="tel" placeholder="06 40 40 40 40">
+                    </p>
+                </div>
+                <div id="droite">
+                    <p class="message">
+                        <label for="message">Laissez-nous un message, nous vous contacterons au plus vite.</label>
+                        <textarea name="message" id="message" placeholder="Votre message" cols="30" rows="10"></textarea>
+                    </p>
+                    <p class="consentement">
+                    <input type="checkbox" name="consentement" id="consentement" required>
+                    <label for="consentement"><a href="#" title="cliquez pour lire les conditions d'utilisation">J'accepte les conditions d'utilisation</a><span class="obligatoire">*</span></label></p>
+                    </p>
+                    <p>
+                        <input type="submit" value="Envoyer" id="btnEnvoi">
+                        <input type="reset" value="Annuler">
+                    </p> 
+                </div>          
             </form>
         </div>
     </div>

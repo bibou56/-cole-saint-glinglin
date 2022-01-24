@@ -116,8 +116,9 @@ body{
     line-height: 1.5rem;
     font-size: 1rem;
 }
-.active{
+.sous-menu ul li a.active{
     text-decoration: underline;
+    font-size: 1.5rem;
 }
 .sous-menu ul li a.rouge{
     color: var(--rouge);
@@ -148,7 +149,7 @@ body{
     width: 80%;
     margin: 0 auto 20px;
     background: linear-gradient(90deg, rgba(236,22,22,1) 0%, rgba(248,134,4,1) 17%, rgba(238,223,9,1) 35%, rgba(64,219,32,1) 55%, rgba(22,203,235,1) 78%, rgba(176,35,219,1) 100%);
-    height: 3px;
+    height: 4px;
 }
 
 /*----------------- INDEX---------- */
@@ -171,8 +172,8 @@ body{
 .transition-rouge{
     width: 70%;
     margin: 0 auto;
-    border-bottom: 3px dotted var(--rouge);
-    border-radius: 5px;   
+    border-bottom: 2px dotted var(--rouge);
+    /* border-radius: 5px;    */
 }
 
 /* dates et infos à retenir */
@@ -242,7 +243,7 @@ body{
     font-size: 1.4rem;
 }
 #actualites .actu .texte-post p{
-    text-align: end;
+    text-align: start;
 }
 .btn_actu{
     margin-top: 20px;
@@ -664,19 +665,20 @@ body{
     .transition-rouge{
         width: 60%;
     }
-    #bloc{
+    /* #bloc{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: top;
         width: 100%;
-    }
+    } */
     #a-retenir h2, #actualites h2, #vie-classes h2{
         padding: 10px 0;
         font-size: 1.5rem;
     }
     #a-retenir, #actualites{
-        width: 45%;
+        width: 70%;
+        margin: 0 auto;
     }
     /* #bloc-infos, #actualites .actu{
         width: 100%;
@@ -699,7 +701,7 @@ body{
         margin-bottom: 50px;
     }
     #acces-menu ul li{
-        width: 40%;
+        width: 50%;
         margin: 8px auto;
     }
 
@@ -874,7 +876,7 @@ body{
         margin: 0 auto 30px;
     }
     #actualites{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: row;
@@ -882,7 +884,7 @@ body{
         justify-content: space-around;
     }
     #actualites .actu{
-        width: 28%;
+        width: 30%;
     }
     #actualites .actu.cache{
         display: block;
@@ -895,13 +897,12 @@ body{
         margin-bottom:20px
     }
     #actualites #voirplus{
-        width: 50%;
         margin: 10px 500px 30px;
     }
     #actualites #voirplus a{
-
-        /* font-size: 1.5rem; */
-    }
+        width: 20%;
+         font-size: 1.5rem; 
+    } 
     #vie-classes{
         width: 80%;
         margin: 0 auto;
@@ -913,8 +914,8 @@ body{
         flex-wrap: wrap;
         margin: 20px 0;
     }
-    #vie-classes .classes a{
-        /* margin-bottom: 50px; */
+    /*#vie-classes .classes a{
+         margin-bottom: 50px; 
     }
     /* #vie-classes{
         width: 80%;
@@ -961,7 +962,7 @@ body{
         margin-bottom: 30px;
     }
     #posts-blog .actu{
-        width: 26%;
+        width: 30%;
         margin-bottom: 50px;
     }
     #posts-blog .actu img{
@@ -981,7 +982,7 @@ body{
         margin: 0 auto;
     }
     #contact{
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
     #contact img{
@@ -992,7 +993,16 @@ body{
     }
     #contact #formulaire-contact form{
         margin: 30px 20px;
-    }  
+    } 
+    #contact #formulaire-contact{
+        display: flex;
+        flex-direction: row;
+    }
+    #contact #formulaire-contact .champs{
+        text-align: start;
+        font-size: 0.8rem;
+        padding-left: 5px;
+    }
     #contact #formulaire-contact input{
         width: 50%;
     }
@@ -1007,15 +1017,18 @@ body{
         width: 60%;
         margin-bottom: 20px;
     }
-    #contact #formulaire-contact .consentement{
-        margin: 0 0 20px 200px;
-    }
+    #contact #formulaire-contact .consentement a{
+        text-align: end;
+    } 
     #contact #formulaire-contact input[type=submit],
     #contact #formulaire-contact input[type=reset]{
-        width: 15%;
+        width: 20%;
     }
     #contact #formulaire-contact input[type=submit]{
         margin-left: 250px;
+    }
+    #localisation iframe{
+        height: 400px;
     }
     
     /* articles blog */

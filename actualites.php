@@ -3,19 +3,21 @@
     <main id="contenu" class="container">
         <section id="posts-blog">       
             <h1>- NOS ACTUALITES -</h1>
+            <?php foreach($allArticles as $allArticle){ ?>
+
             <article class="actu">           
-                <img src="images/celebration-toussaint.jpg" alt="messe de la Toussaint">
+                <img src="<?= $allArticle->getImg() ?>">
                 <div class="texte-post">
-                    <h3>- Célébration de la Toussaint - <span class="dateblog">22/10/2021</span></h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Illum eius voluptatem consectetur, voluptates veritatis veniam.</p>
+                    <h3><?= $allArticle->getTitle() ?><span class="dateblog">22/10/2021</span></h3>
+                    <p><?= $allArticle->getAccroche() ?></p>
                     <div class="btn_actu">
-                        <a href="toussaint2021.php">Lire la suite</a>
+                        <a href="<?= $allArticle->getUrl() ?>">Lire la suite</a>
                     </div>
                 </div>      
             </article>
+        <?php }; ?>
 
-            <article class="actu">
+            <!-- <article class="actu">
                 <img src="images/pommier.jpg" alt="verger">
                 <div class="texte-post">
                     <h3>- Visite du Musée de la Pomme - <span class="dateblog">10/10/2021</span></h3>
@@ -73,7 +75,7 @@
                         <a href="kermesse2021.php">Lire la suite</a>
                     </div>
                 </div>
-            </article>
+            </article> -->
 
             <div id="pagination-blog"><a href="#" class="clique-page">Page Précédente -</a> Page 1/1 - <a href="#" class="clique-page">Page Suivante</a></div>
         </section>

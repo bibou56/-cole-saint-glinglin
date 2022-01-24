@@ -27,13 +27,43 @@
 
             <section id="actualites">
                 <h2>- Nos actualités -</h2>
-                <article class="actu">
+                <!-- boucle pr afficher un article pr mobiles et tablettes -->
+                <?php for($i=0; $i<1; $i++){?>
+
+                    <article class="actu">           
+                        <img src="<?= $allArticles[$i]->getImg() ?>">
+                        <div class="texte-post">
+                            <h3><?= $allArticles[$i]->getTitle() ?><span class="dateblog">22/10/2021</span></h3>
+                            <p><?= $allArticles[$i]->getAccroche() ?></p>
+                            <div class="btn_actu">
+                                <a href="<?= $allArticles[$i]->getUrl() ?>">Lire la suite</a>
+                            </div>
+                        </div>      
+                    </article>
+                    <?php }; ?>
+
+                    <!-- boucle pr afficher 3 articles format PC -->
+                    <?php for($i=1; $i<3; $i++){?>
+                        <article class="actu cache">
+                        <img src="<?= $allArticles[$i]->getImg() ?>">
+                        <div class="texte-post">
+                            <h3><?= $allArticles[$i]->getTitle() ?><span class="dateblog">22/10/2021</span></h3>
+                            <p><?= $allArticles[$i]->getAccroche() ?></p>
+                            <div class="btn_actu">
+                                <a href="<?= $allArticles[$i]->getUrl() ?>">Lire la suite</a>
+                            </div>
+                        </div>      
+                    </article>
+                    <?php }; ?>
+
+
+                <!-- <article class="actu">
                     <img src="images/celebration-toussaint.jpg" alt="messe de la Toussaint">
                     <div class="texte-post">
                         <p>22/10/2021</p>
                         <h3>- Célébration de la Toussaint -</h3>   
-                        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Illum eius voluptatem consectetur, voluptates veritatis veniam.</p> -->
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Illum eius voluptatem consectetur, voluptates veritatis veniam.</p> 
                         <div class="btn_actu">
                             <a href="toussaint2021.php">Lire l'article</a>
                         </div>
@@ -45,8 +75,8 @@
                     <div class="texte-post">
                         <p>10/10/2021</p>
                         <h3>- Visite du Musée de la Pomme -</h3> 
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eum, temporibus quia? Architecto vitae possimus dolor?</p> -->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eum, temporibus quia? Architecto vitae possimus dolor?</p>
                         <div class="btn_actu">
                             <a href="musee-pomme2021.php">Lire l'article</a>
                         </div>
@@ -58,16 +88,16 @@
                     <div class="texte-post">
                         <p>20/09/2021</p>
                         <h3>- La fête de la rentrée -</h3> 
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Obcaecati fugit odit voluptatum numquam, repudiandae eveniet.</p> -->
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Obcaecati fugit odit voluptatum numquam, repudiandae eveniet.</p>
                         <div class="btn_actu">
-                            <a href="fete-rentree2021.php">Lire la suite</a>
+                            <a href="fete-rentree2021.php">Lire l'article</a>
                         </div>
                     </div>
-                </article> 
+                </article> -->
                 <div id="voirplus"><a href="actualites.php">En voir plus...</a></div>      
             </section>
-        <!-- </div> -->
+        </div>
 
         <div class="transition-rouge"></div>
 
