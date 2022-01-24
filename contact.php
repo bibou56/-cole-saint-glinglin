@@ -37,6 +37,12 @@
                     <input type="text" name="prenom" id="prenom" placeholder="Prénom">
                 </p>
                 <p>
+                    <label for="adresse">Votre adresse<span class="obligatoire">*</span></label>
+                    <input type="text" name="adresse" id="address" placeholder="Votre adresse">
+                    <ul id="wrapper"></ul>
+                </p>
+
+                <p>
                     <label for="email">Votre e-mail<span class="obligatoire">*</span></label>
                     <input type="email" name="email" id="email" placeholder="E-mail">
                 </p>

@@ -2,9 +2,9 @@
 :root{
     --bleu-fonce: #370bb3;
     --bleu-clair: rgb(101, 205, 231);
-    --rouge: rgb(236, 22, 22);
-    --orange: rgb(248, 134, 4);
-    --jaune: rgb(243, 204, 32);
+    --rouge: rgb(218, 17, 17);
+    --rose: rgb(238, 37, 154);
+    --jaune: rgb(238, 178, 13);
     --vert: rgb(50, 189, 22);
     --bleu: rgb(22, 203, 235);
     --indigo: rgb(176, 35, 219); 
@@ -123,7 +123,7 @@ body{
     color: var(--rouge);
 }
 .sous-menu ul li a.orange{
-    color: var(--orange);
+    color: var(--rose);
 }
 .sous-menu ul li a.jaune{
     color: var(--jaune);
@@ -319,7 +319,7 @@ body{
 
 }
 #acces-menu ul li.orange{
-    background-color: var(--orange);
+    background-color: var(--rose);
 }
 #acces-menu ul li.jaune{
     background-color: var(--jaune);
@@ -507,6 +507,12 @@ body{
     border: 2px solid var(--indigo);
     border-radius: 5px;
 }
+#contact #formulaire-contact form #wrapper{
+    text-align: center;
+}
+#contact #formulaire-contact form #wrapper li{
+    cursor: pointer; 
+}
 #contact label{
     display: inline-block;
     text-align: start;
@@ -589,7 +595,7 @@ body{
     color: var(--rouge);
 }
 .article-actu h2.orange{
-    color: var(--orange);
+    color: var(--rose);
 }
 .article-actu h2.jaune{
     color: var(--jaune);
