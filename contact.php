@@ -31,30 +31,30 @@
                 <form action="#" method="post">
                     <p>
                         <label for="nom">Votre nom<span class="obligatoire">*</span></label>
-                        <input type="text" name="nom" id="nom" placeholder="NOM" required>
+                        <input type="text" name="nom" id="nom" required>
                     </p>
                     <p>
                         <label for="prenom">Votre prénom<span class="obligatoire">*</span></label>
-                        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+                        <input type="text" name="prenom" id="prenom" required>
                     </p>
                     <p>
                         <label for="adresse">Votre adresse<span class="obligatoire">*</span></label>
-                        <input type="text" name="adresse" id="address" placeholder="Votre adresse" required>
+                        <input type="text" name="adresse" id="address" required>
                         <ul id="wrapper"></ul>
                     </p>
 
                     <p>
                         <label for="email">Votre e-mail<span class="obligatoire">*</span></label>
-                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input type="email" name="email" id="email" required>
                     </p>
                     <p>
                         <label for="tel">Votre téléphone</label>
-                        <input type="tel" name="tel" id="tel" placeholder="06 40 40 40 40">
+                        <input type="tel" name="tel" id="tel">
                     </p>
                 </div>
                 <div id="droite">
                     <p class="message">
-                        <label for="message">Laissez-nous un message, nous vous contacterons au plus vite.</label>
+                        <label for="message" id="label">Laissez-nous votre message.</label>
                         <textarea name="message" id="message" placeholder="Votre message" cols="30" rows="10"></textarea>
                     </p>
                     <p class="consentement">

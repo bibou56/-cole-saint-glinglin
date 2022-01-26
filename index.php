@@ -19,7 +19,7 @@
                     <p><span class="date">10/12/2021:</span> Marché de Noël et chants des enfants</p>
                     <p><span class="date">04/12/2021:</span> Venez récupérer votre sapin de Noël à l'école!</p>
                     <p><span class="date">25/11/2021:</span> Début des cours de natation pour les CP/CE1</p>
-                    <p><span class="date">16/11/2021:</span> N'oubliez pas de passer commande pour vos chocolats de Noël!</p>
+                    <p><span class="date">16/11/2021:</span> N'oubliez pas de passer commande pour vos chocolats de Noël !</p>
                 </div>
             </section>
 
@@ -33,8 +33,9 @@
                     <article class="actu">           
                         <img src="<?= $allArticles[$i]->getImg() ?>">
                         <div class="texte-post">
-                            <h3><?= $allArticles[$i]->getTitle() ?><span class="dateblog">22/10/2021</span></h3>
-                            <p><?= $allArticles[$i]->getAccroche() ?></p>
+                            <p class="dateblog"><?= $allArticles[$i]->getCreation() ?></p>
+                            <h3><?= $allArticles[$i]->getTitle() ?></h3>
+                            <p class="accroche"><?= $allArticles[$i]->getAccroche() ?></p>
                             <div class="btn_actu">
                                 <a href="<?= $allArticles[$i]->getUrl() ?>">Lire la suite</a>
                             </div>
@@ -47,7 +48,8 @@
                         <article class="actu cache">
                         <img src="<?= $allArticles[$i]->getImg() ?>">
                         <div class="texte-post">
-                            <h3><?= $allArticles[$i]->getTitle() ?><span class="dateblog">22/10/2021</span></h3>
+                            <p class="dateblog"><?= $allArticles[$i]->getCreation() ?></p>
+                            <h3><?= $allArticles[$i]->getTitle() ?></h3>
                             <p><?= $allArticles[$i]->getAccroche() ?></p>
                             <div class="btn_actu">
                                 <a href="<?= $allArticles[$i]->getUrl() ?>">Lire la suite</a>

@@ -27,6 +27,8 @@
             <div id="copyright" class="container"><a href="#"> - Mentions légales -</a></div>
             
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+        <script type="module" src="./bdd.js"></script>
         <script type="text/javascript" src="./script.js"></script>
         <script type="text/javascript" src="./formulaire.js"></script>
 

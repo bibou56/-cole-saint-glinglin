@@ -8,8 +8,9 @@
             <article class="actu">           
                 <img src="<?= $allArticle->getImg() ?>">
                 <div class="texte-post">
-                    <h3><?= $allArticle->getTitle() ?><span class="dateblog">22/10/2021</span></h3>
-                    <p><?= $allArticle->getAccroche() ?></p>
+                    <p class="dateblog"><?= $allArticle->getCreation() ?></p>
+                    <h3><?= $allArticle->getTitle() ?></h3>
+                    <p class="accroche"><?= $allArticle->getAccroche() ?></p>
                     <div class="btn_actu">
                         <a href="<?= $allArticle->getUrl() ?>">Lire la suite</a>
                     </div>

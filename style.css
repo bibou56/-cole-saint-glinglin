@@ -234,16 +234,20 @@ body{
     display: none;
 }
 #actualites .actu .texte-post{
-    padding: 15px 15px;
+    padding: 5px 10px 5px;
 } 
+#actualites .actu .dateblog{
+    font-size: 1rem;
+    text-align: end;
+}
 #actualites .actu .texte-post h3{
     width: 100%;
     color: var(--rouge);
     text-align: center;
     font-size: 1.4rem;
 }
-#actualites .actu .texte-post p{
-    text-align: start;
+#actualites .actu .texte-post .accroche{
+    text-align: justify;
 }
 .btn_actu{
     margin-top: 20px;
@@ -410,12 +414,20 @@ body{
 }
 #posts-blog .actu .texte-post{
     padding: 15px 15px;
+}
+#posts-blog .actu .dateblog{
+    font-size: 1rem;
+    text-align: end;
 }  
 #posts-blog .actu .texte-post h3{
     width: 100%;
     color: var(--jaune);
     margin-bottom: 5px;
     font-size: 1.3rem;
+    text-align: center;
+}
+#posts-blog .actu .accroche{
+    text-align: justify;
 }
 #posts-blog .actu .texte-post a{
     background-color: var(--jaune);
@@ -423,21 +435,13 @@ body{
     margin-bottom: 50px;
     border-radius: 3px;
 }
-/* .btn_actu{
-    margin-top: 26px;
-    margin-bottom: 26px;
-    text-align: center;
-} */
 #posts-blog #pagination-blog{
     width: 100%;
     text-align: center;
-    /* color: var(--jaune); */
     margin: 20px auto;
     font-size: 20px;
 }
-/* #posts-blog #pagination-blog a{
-    color: var(--jaune);
-} */
+
 
 /*----------------- page "Contact"------------------- */
 #contact, #localisation, #adresse{
@@ -827,6 +831,12 @@ body{
     /* #contenuhaut #coordonnees p{
         font-size: 0.9rem
     } */
+    #contenuhaut #coordonnees p i{
+        font-size: 1.3rem; 
+    }
+    #contenuhaut #coordonnees p i.facebook{
+        font-size: 1.8rem;
+    }
     .para_top{
         padding: 4px 0;
     }
@@ -852,29 +862,41 @@ body{
         border-bottom: none;
     }
     .sous-menu ul li a{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .sous-menu ul li a:hover{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-weight: bolder;
     }
 
-    /* index */
+    /* ............index......... */
+    /* bienvenue */
+    #bienvenue{
+        width: 100%;
+    }
     #bienvenue p{
-        width: 80%;
+        width: 90%;
         margin: 0 auto 30px;
+        font-size: 1.2rem;
     }
     #bienvenue h1{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
+
+    /* a retenir */
     #a-retenir h2, #actualites h2, #vie-classes h2{
-        font-size: 1.9rem;
+        font-size: 2rem;
         padding: 20px 0 10px;
     }
     #a-retenir #bloc-infos{
-        width: 60%;
+        width: 70%;
         margin: 0 auto 30px;
     }
+    #a-retenir #bloc-infos p, #a-retenir #bloc-infos .date {
+        font-size: 1.3rem;
+    }
+
+    /* actu */
     #actualites{
         width: 100%;
         margin: 0 auto;
@@ -903,8 +925,10 @@ body{
         width: 20%;
          font-size: 1.5rem; 
     } 
+
+    /* vie des classes */
     #vie-classes{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
     #vie-classes .classes{
@@ -914,8 +938,9 @@ body{
         flex-wrap: wrap;
         margin: 20px 0;
     }
-    /*#vie-classes .classes a{
-         margin-bottom: 50px; 
+    #vie-classes .classes a{
+        font-size: 1.5rem;
+        width: 160px;
     }
     /* #vie-classes{
         width: 80%;
@@ -978,8 +1003,11 @@ body{
         font-size: 2rem;
     }
     #adresse{
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
+    }
+    #adresse h3, #adresse p{
+        font-size: 1.4rem;
     }
     #contact{
         width: 100%;
@@ -998,23 +1026,35 @@ body{
         display: flex;
         flex-direction: row;
     }
+    #contact #formulaire-contact #gauche{
+        width: 40%;
+    }
+    #contact #formulaire-contact #gauche input, #contact #formulaire-contact #gauche label{
+        width: 80%;
+    }
+    #contact #formulaire-contact #droite{
+        width: 60%;
+    }
+    #contact #formulaire-contact #droite #label{
+        width: 90%;
+    }
+    #contact #formulaire-contact #droite textarea{
+        width: 90%;
+    }
     #contact #formulaire-contact .champs{
         text-align: start;
         font-size: 0.8rem;
         padding-left: 5px;
     }
-    #contact #formulaire-contact input{
-        width: 50%;
-    }
-    #contact label{
-        width: 200px;
+     #contact label{
         font-size: 1.2rem;
-    }
-    #contact .message{
+    } 
+     #contact .message{
         margin-top: 50px;
-    }
+    } 
     #contact textarea{
         width: 60%;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
     #contact #formulaire-contact .consentement a{
@@ -1025,7 +1065,8 @@ body{
         width: 20%;
     }
     #contact #formulaire-contact input[type=submit]{
-        margin-left: 250px;
+        /* margin-left: 250px; */
+        margin-top: 30px;
     }
     #localisation iframe{
         height: 400px;
